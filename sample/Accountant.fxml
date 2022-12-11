@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="213.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Accountantscreen">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#mainscreen" text="Главное окно" />
+      <Label fx:id="label" layoutX="186.0" layoutY="18.0" prefHeight="17.0" prefWidth="159.0" text="Бухгалтер" />
+      <ComboBox fx:id="monthcb" layoutX="40.0" layoutY="82.0" prefWidth="150.0" promptText="Выберите месяц" />
+      <TextField fx:id="yeartf" layoutX="240.0" layoutY="82.0" promptText="Введите год" />
+      <Button layoutX="155.0" layoutY="130.0" mnemonicParsing="false" onAction="#formreport" text="Сформировать отчет" />
+   </children>
+</AnchorPane>

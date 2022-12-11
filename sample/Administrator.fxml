@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Adminscreen">
+   <children>
+      <Button layoutX="336.0" layoutY="267.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="67.0" text="Удалить" />
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#mainscreen" text="Главное окно" />
+      <TableView fx:id="admintable" layoutX="20.0" layoutY="56.0" prefHeight="200.0" prefWidth="566.0">
+        <columns>
+          <TableColumn fx:id="nameproducts" prefWidth="175.0" text="Название продукции" />
+          <TableColumn fx:id="price" prefWidth="92.0" text="Цена" />
+            <TableColumn fx:id="guarantee" prefWidth="176.0" text="Гарантия" />
+            <TableColumn fx:id="category" prefWidth="122.0" text="Категория" />
+        </columns>
+      </TableView>
+      <Label layoutX="253.0" layoutY="6.0" prefHeight="17.0" prefWidth="94.0" text="Администратор" />
+      <Button layoutX="190.0" layoutY="267.0" mnemonicParsing="false" onAction="#zamena" text="Изменить" />
+   </children>
+</AnchorPane>
